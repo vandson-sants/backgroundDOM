@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Inter:400,500,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.nav-content {
+  background-color: #ffffffde;
+  height: 4rem;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.349);
+}
+
+.nav-center {
+  width: 80vw;
+  max-width: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.title-nav {
+  color: #00284d;
+  letter-spacing: 2pt;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #00284d;
+  letter-spacing: 2pt;
+}
+
+a:hover {
+  color: #0762bd;
+  text-decoration: underline;
+}
+
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+
+.container-background {
+  text-align: center;
+}
+
+.title-bg-color {
+  background-color: #030303;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.color {
+  color: #0762bd;
+  text-transform: capitalize;
+}
+
+.btn-hero {
+  font-family: "Inter";
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  color: #030303;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  border: 2px solid #030303;
+  transition: 0.5s;
+}
+
+.btn-hero:hover {
+  color: #fff;
+  background: #030303;
+}
+
+@media screen and (max-width: 600px) {
+  .title-nav {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  li {
+    font-size: 15px;
+    margin: 0 5px;
+  }
+
+  .nav-links {
+    margin-left: 19px;
+  }
+}
